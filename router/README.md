@@ -1,11 +1,22 @@
-# Vue 3 + Typescript + Vite
+## 一、初始项目
+1. 项目介绍与版本库地址
+2. 编辑器的选择
+3. 项目文件结构与浏览器插件
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 二、自动注册路由
+1. 初始路由
+2. 优化路由定义
+3. 布局页面思路分析
+4. 路由嵌套与TS类型断言
+5. 路由别名定义
+6. 优化布局路由文件结构
+7. 自动提取布局页面
+8. 自动生成布局路由
+9. 完成布局路由提取
+10. 提取子路由
+11. 修正子路由提取的问题
+12. 让页面可以自定义路由规则
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## 三、VITE环境变量
+1. vite别名alias声明
+2. 修复main.ts中别名报错问题

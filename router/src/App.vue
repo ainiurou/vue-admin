@@ -1,21 +1,19 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+// const response = await fetch('http://localhost:3000/api/get').then(r=>r.json())
+// console.log(response)
+import { info } from './api/user'
+const response = await info()
+console.log(response.data.result.height)
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+<ul class="bg-red-800">
+    <li>首页</li>
+    <li>商品</li>
+    <li>评价</li>
+</ul>
+ <router-view></router-view>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
