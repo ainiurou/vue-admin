@@ -3,7 +3,11 @@
 </script>
 
 <template>
+<div>
+auth.vue
+</div>
  
+ <router-view></router-view>
 </template>
 
 <style>
