@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from "vue-router"
-
+import { env } from "@/types/helper"
 
 const layouts = import.meta.globEager('../layouts/*.vue')
 const views = import.meta.globEager('../views/**/*.vue')
@@ -36,9 +36,9 @@ function getRouteByModule (file:string,module:{[key:string]:any}){
         path:`/${name}`,
         component:module.default
     }
+    //这块使用assign 会让组件中的route中的path覆盖前面的route中的path eg: (previous path): /admin/user => (next path): /user
     return Object.assign(route,route.component?.route)
 }
 
-
-
-export default getRoutes
+const Routes = env.VITE_ROUTER_AUTOLOAD ? getRoutes() : [] as RouteRecordRaw[]
+export default Routes
