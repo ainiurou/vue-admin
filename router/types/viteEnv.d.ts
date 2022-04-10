@@ -7,6 +7,6 @@ interface ImportMetaEnv extends viteEnv {
     // 更多环境变量...
   }
   
-  interface ImportMeta {
+interface ImportMeta {
     readonly env: ImportMetaEnv
-  }
+}

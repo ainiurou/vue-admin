@@ -3,9 +3,10 @@
 </script>
 
 <template>
- 
- <router-view></router-view>
+live.vue
 </template>
 
-<style>
+<style lang="scss">
 </style>
+<script>
+</script>

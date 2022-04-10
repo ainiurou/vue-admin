@@ -5,7 +5,7 @@ const props = defineProps({
 
 </script>
 <template>
-<input type="text"  class="zp-input" :value="modelValue"  @input="$emit('update:modelValue',$event.target?.value)">
+<input type="text"  class="zp-input" :value="modelValue"  @input="$emit('update:modelValue',($event.target as HTMLInputElement).value)">
 </template>
 <style lang="scss">
 .zp-input {
