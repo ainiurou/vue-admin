@@ -13,6 +13,7 @@ Object.keys(rules).forEach(key => {
 
 //中文消息定义
 veeValidate.configure({
+
     generateMessage:localize('zh_CN',zh_CN)
 })
 
