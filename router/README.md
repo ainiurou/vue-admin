@@ -13,6 +13,7 @@
     安装tailwindcss：    yarn add -D tailwindcss postcss autoprefixer   npx tailwindcss init -p
     安装sass：           yarn add -d sass
     安装表单验证库：       yarn add vee-validate@next @vee-validate/rules yup @vee-validate/i18n
+    安装组件库            yarn add element-plus
     ```
 ## 二、自动注册路由
 1. 初始路由
