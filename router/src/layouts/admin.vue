@@ -2,25 +2,22 @@
 import MenuComponent from './admin/menu.vue'
 import Navbar from './admin/navbar.vue'
 import HistoryLink from './admin/historyLink.vue'
-
 </script>
 
 <template>
- <div class="w-screen h-screen  flex ">
-     <MenuComponent />
-     <div class="content flex-1 bg-slate-200">
-         <Navbar />
-         <HistoryLink />
-         <router-view></router-view>
-     </div>
- </div>
+  <div class="admin h-min-screen  w-screen  flex">
+    <MenuComponent class="hidden md:block"/>
+    <div class="content flex-1 bg-slate-100">
+      <Navbar />
+      <HistoryLink />
+      <div class="m-5">
+        <router-view />
+      </div>
+    </div>
+  </div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
 <script lang="ts">
-
-export default{ route: { meta:{ auth:true } }
-}
+export default { route: { meta: { auth: true } } }
 </script>

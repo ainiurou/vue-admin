@@ -9,7 +9,7 @@ export default ({ command, mode }: ConfigEnv)=>{
   const root = process.cwd()
   //检查.env环境文件，输出NODE_ENV 和 VITE_开头的键值对，VITE_后面的不会覆盖前面的
   const env = parseEnv(loadEnv(mode,root))
-  console.log(env.VITE_SOME_KEY)
+  console.log(env)
 
   return {
     // plugins:[vue()]

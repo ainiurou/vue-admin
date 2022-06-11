@@ -10,8 +10,8 @@ admin/user.vue
 </style>
 <script>
 export default {
-    route:{
-        path:'/user'
-    }
+    // route:{
+    //     path:'/user'
+    // }
 }
 </script>
