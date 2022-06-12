@@ -3,11 +3,13 @@ import { App } from "vue";
 import { setupTailwindcss } from "./tailwindcss";
 import _ from 'lodash'
 import setupElementPlus from "./elementui";
+import setupPinia from "./pinia";
 
 export function setupPlugins(app: App){
     autoRegisterComponent(app)
     setupTailwindcss()
     setupElementPlus(app)
+    setupPinia(app)
 }
 
 function autoRegisterComponent(app: App){

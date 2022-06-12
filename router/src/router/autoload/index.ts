@@ -11,4 +11,5 @@ else {
     routes = autoloadModuleRoutes()
 }
 
+//todo 通过权限过滤掉路由
 export default routes
